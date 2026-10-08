@@ -68,7 +68,7 @@ class SesionWhatsApp:
         # Modo sin pantalla para Render
         opciones.add_argument("--headless=new")
         opciones.add_argument("--window-size=1920,1080")
-
+        opciones.binary_location = "/usr/bin/chromium-browser"
         self.driver = uc.Chrome(
             options=opciones,
             version_main=None,

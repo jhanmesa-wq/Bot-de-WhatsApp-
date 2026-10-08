@@ -3,3 +3,4 @@ selenium==4.15.2
 python-telegram-bot==20.7
 pyvirtualdisplay==3.0
 flask==3.0.0
+setuptools

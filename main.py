@@ -1,3 +1,5 @@
+from waitress import serve
+import threading
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -306,11 +308,18 @@ def iniciar_bot():
     application.add_handler(CommandHandler("reportar", cmd_reportar))
     application.add_handler(CommandHandler("codigos", cmd_codigos))
     application.add_handler(CommandHandler("estado", cmd_estado))
-    print("🤖 BOT INICIADO — Comandos: /codigos /reportar /estado")
     application.run_polling()
 
+# ─── ARRANQUE DEL SERVIDOR Y BOT ───
 if __name__ == "__main__":
-    iniciar_bot()
-    for s in SESIONES_ACTIVAS:
-        s.cerrar()
+    import threading
+    
+    # Iniciar servidor web en segundo plano
+    threading.Thread(target=iniciar_servidor_web, daemon=True).start()
+    print("🌐 Servidor web activo en el puerto 10000")
+    
+    # Iniciar tu bot aquí (reemplaza con tu función real)
+    # iniciar_tu_bot()
+    print("🤖 BOT INICIADO")
+    
   

@@ -16,6 +16,9 @@ COPY . .
 
 ENV CHROME_BIN=/usr/bin/chromium
 ENV DISPLAY=:99
+ENV PORT=10000
+EXPOSE 10000
+
 
 CMD ["python", "main.py"]
 

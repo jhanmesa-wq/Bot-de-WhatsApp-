@@ -1,35 +1,21 @@
-# Gradle files
-.gradle/
-build/
-.kotlin/
+# Carpetas de perfiles de WhatsApp
+wa_perfil_*/
+perfil_*/
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Log/OS Files
+# Contraseñas y datos privados
+.env
+
+# Capturas y logs
+error_*.png
 *.log
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+# Archivos del sistema
+.DS_Store
+Thumbs.db
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof

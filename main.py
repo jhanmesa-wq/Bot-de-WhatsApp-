@@ -277,7 +277,6 @@ def configurar_sesiones():
     # === TUS CUENTAS AQUÍ ===
     datos_sesiones = [
         {"nombre": "Cuenta_1", "perfil": "./wa_perfil_1", "numero": "+51987654321"},
-        {"nombre": "Cuenta_2", "perfil": "./wa_perfil_2", "numero": "+51999888777"},
         # Agrega más aquí
     ]
     for d in datos_sesiones:

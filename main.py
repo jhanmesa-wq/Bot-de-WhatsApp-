@@ -32,7 +32,7 @@ def mantener_vivo():
 
 def iniciar_servidor_web():
     from waitress import serve
-    serve(app, host="0.0.0.0", port=PUERTO)
+    serve(app, host="0.0.0.0", port=1000)
 
 # ──────────────────────────────────────────────
 # FUNCIONES AUXILIARES

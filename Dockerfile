@@ -5,7 +5,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     chromium \
     xvfb \
     libxi6 \
-    libgconf-2-4 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -19,3 +18,4 @@ ENV CHROME_BIN=/usr/bin/chromium
 ENV DISPLAY=:99
 
 CMD ["python", "main.py"]
+

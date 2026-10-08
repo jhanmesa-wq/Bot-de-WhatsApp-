@@ -71,7 +71,7 @@ class SesionWhatsApp:
         opciones.binary_location = "/usr/bin/chromium"
         self.driver = uc.Chrome(
             options=opciones,
-            version_main=None,
+            version_main=154,
             suppress_welcome=True
         )
         self.wait = WebDriverWait(self.driver, 25)
